@@ -1,0 +1,294 @@
+/* Paleta de Colores y tamaño de la fuente */
+:root {
+    font-size: 18px;
+    --rosa1: pink;
+    --rosa2: rgb(247 128 183);
+    --rosa3: rgb(165 10 100);
+    --azul1: aqua;
+    --blanco: #fff;
+    --blanco2: antiquewhite;
+    --oscurito: rgba(0, 0, 0, 0.1);
+    --grisclaro: rgba(255, 255, 255, 0.2);
+    --negro: black;
+    --moradito: #c7a1c233;
+  }
+  
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+  }
+  
+  /* Empieza Body */
+  
+  body {
+    /* background: var(--rosa1); */
+    background-image: url(../images/myInfo.webp);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-attachment:fixed;
+    background-size: cover;
+  }
+  
+  .contenedor {
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    min-height: 1000px;
+    margin: 50px;
+    /* background: var(--rosa1); */
+    /* background: var(--blanco); */
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    box-shadow: 0 35px 55px var(--oscurito);
+  }
+  
+  /* Columna Izquierda */
+  .left_side {
+    position: relative;
+    background: var(--rosa3);
+    padding: 40px;
+  }
+  
+  .perfil {
+    object-fit: cover;
+    position: relative;
+    width: 180px;
+    height: 200px;
+    border-radius: 10%;
+    overflow: hidden;
+    border-style: double;
+    border-top-color: var(--blanco);
+    border-bottom-color: var(--blanco);
+    border-left-color: var(--blanco2);
+    border-right-color: var(--blanco2);
+  }
+  
+  .profiletext {
+    padding-top: 10px;
+    font-size: 16px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--grisclaro);
+  }
+  
+  .name p {
+    color: var(--blanco);
+    font-size: 16px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-align: left;
+    font-weight: 600;
+    line-height: 1em;
+  }
+  
+  p {
+    color: var(--blanco);
+    font-size: 16px;
+    margin-top: 20px;
+    line-height: 1.3em;
+  }
+  
+  .contactinfo {
+    color: var(--blanco);
+    font-size: 16px;
+    margin-top: 10px;
+    font-weight: 16px;
+    line-height: 1em;
+    text-align: left;
+  }
+  
+  .contactinfo-habilidades {
+    padding-top: 20px;
+    padding-bottom: 10px;
+  }
+  
+  .title {
+    color: var(--blanco);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  ul,
+  li,
+  h4 .title {
+    font-size: 18px;
+    padding-top: 15px;
+    color: var(--blanco);
+    letter-spacing: 0.5px;
+    margin-bottom: 10px;
+    list-style: none;
+  }
+  
+  .idiomas {
+    color: var(--blanco);
+    font-weight: 16px;
+    letter-spacing: 1px;
+    text-align: left;
+  }
+  
+  .p1,
+  .p2 li:nth-child(2) {
+    color: var(--blanco);
+    font-weight: 500;
+    text-align: left;
+    padding-top: 5px;
+    letter-spacing: 0.5px;
+    margin-bottom: 5px;
+  }
+  
+  .p1,
+  .p2 {
+    color: var(--blanco);
+    font-weight: 300;
+    text-align: left;
+    padding-top: 5px;
+    letter-spacing: 0.5px;
+    margin-bottom: 5px;
+  }
+  
+  /* Porcentaje 1 */
+  .porciento {
+    position: relative;
+    width: 100%;
+    height: 6px;
+    background: var(--rosa2);
+    display: block;
+    margin-top: 5px;
+  }
+  
+  .porciento div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: var(--rosa1);
+  }
+  
+  /* Columna Derecha */
+  .right-side {
+    background: var(--blanco);
+    padding: 40px;
+  }
+  
+  .acercade {
+    margin-bottom: 50px;
+  }
+  
+  .acercade:last-child {
+    margin-bottom: 0;
+  }
+  
+  .title2 {
+    color: var(--rosa3);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+  }
+  
+  .right-side {
+    backdrop-filter: blur(7px);
+    background-color: var(--moradito);
+    float: right;
+  }
+  
+  .acerca-de h2 {
+    color: var(--blanco2);
+  }
+  
+  .acerca-de h2 p {
+    color: var(--blanco);
+    font-size: 16px;
+    margin-top: 10px;
+    line-height: 1.3em;
+  }
+  
+  .acerca-de .box {
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0;
+  }
+  
+  .box .Estudios {
+    min-width: 150px;
+  }
+  
+  .box .Estudios h4 {
+    text-transform: uppercase;
+    color: var(--blanco);
+    font-weight: 600;
+  }
+  
+  .box p {
+    text-transform: uppercase;
+    color: var(--blanco2);
+    font-size: 16px;
+    margin-top: 20px;
+    line-height: 0.5em;
+  }
+  
+  .box h5,
+  h4 {
+    color: var(--blanco);
+    font-size: 16px;
+    margin-top: 20px;
+    line-height: 0.5em;
+  }
+  
+  .Skills .title2 {
+    color: var(--blanco2);
+  }
+  
+  .Skills .box {
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .Skills .box h4 {
+    color: var(--blanco);
+    font-weight: 16px;
+  }
+  
+  /* Porcentaje 2 */
+  .Skills .percent {
+    position: relative;
+    width: 100%;
+    height: 6px;
+    background: var(--moradito);
+    display: block;
+    margin-top: 5px;
+  }
+  
+  .Skills .box .percent div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: var(--rosa2);
+  }
+  
+  /* Clases de genarogg */
+  .porciento-container {
+    display: block;
+    height: 7px;
+    overflow: hidden;
+    width: 100%;
+    border: 1px solid #f780b7;
+  }
+  
+  .porciento-container > div {
+    background-color: #f780b7;
+    height: 7px;
+  }
+
